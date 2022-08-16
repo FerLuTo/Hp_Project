@@ -1,0 +1,83 @@
+﻿@model IEnumerable<Hp_Project.Models.Student>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Students</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Wizard)
+        </th>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.House)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ancestry)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EyeColour)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HairColour)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Patronus)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Actor)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gender)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateOfBirth)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Wizard)
+        </td>
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.House)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ancestry)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EyeColour)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HairColour)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Patronus)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Actor)
+        </td>
+      
+    </tr>
+}
+
+</table>
